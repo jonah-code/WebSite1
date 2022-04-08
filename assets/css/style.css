@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat','Arial';
+    font-size: 14px;
+}
+header{
+    height: 100px;
+    background-color: black;
+}
+.header{
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+
+}
+.logoimg{
+    width: 80px;
+    height: 80px;
+    background-color: #b28756;
+    border-radius: 40px;
+}
+.menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul,
+.menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+.menu li a:hover,
+.menu .active a {
+    border-bottom: 5px solid #b28756;
+    color: rgb(164, 159, 159);
+}
+.banner{
+    height:calc(100vh - 100px ) ;
+    background-color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    
+}
+.banner .sliders{
+    width: 1000vw;
+    height: 100%;
+}
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.banner .sliderarea{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+.banner h1 span{
+    color: #b28756;
+}
+.banner h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+.banner a{
+    display: block;
+    background-color: #b28756;
+    color: white;
+    font-size: 13px;
+    font-weight: 600px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 15px;
+    border-radius: 20px;
+
+}
+.default{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .sectionTitle,
+.default .sectionDesc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.default .sectionTitle{
+    font-size: 20px;
+
+}
+.default .sectionDesc{
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 7px;
+    margin-bottom: 40px;
+}
+
+.default .sectionBory{
+    margin: auto;
+    max-width: 1140px;
+}
+.default.ligth{
+    background-color: #f7f7f7;
+}
+.default.ligth .sectionTitle,
+.default.ligth .sectionBory{
+    color: black;
+}
+
+.default.dark{
+    background-color: black;
+}
+.default.dark .sectionTitle,
+.default.dark .sectionBory{
+    color: white;
+}
+.sectionBory{
+    display: flex;
+    justify-content: space-between;
+}
+.sectionBory .decription{
+    width: 500px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column
+}
+.button{
+    display: inline-block;
+    background-color: #b28756;
+    color: white;
+    font-size: 13px;
+    font-weight: 600px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 15px;
+    border-radius: 20px;
+
+
+}
+.sectionBory .card{
+    width: 500px;
+    height: 250px;
+    text-align: center;
+}
+.card img{
+    width: 450px;
+    box-shadow: 0px 5px 10px #333;
+}
+.descriptionInfo p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.sectionServices{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-self: flex-start;
+}
+.areaBar{
+    flex: 1;
+    text-align: center;
+    border-left: 1px yellow solid;
+    width: 100px;
+    padding: 15px;
+    
+}
+.areaBar h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.areaBar p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+.areaBar.direta{
+    border-right: #b28756 1px solid;
+}
+
+.sectionBory.colum{
+    flex-direction: column;
+}
+
+
+.sectionProjects{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionProjectsFilters{
+    border: 1px solid #999;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.sectionProjectsFilters ul, 
+.sectionProjectsFilters li{
+    list-style: none;
+}
+.sectionProjectsFilters li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: solid 1px #CCC ;
+    color: #555;
+    border-bottom:3px solid #EEE ;
+    cursor: pointer;
+}
+.sectionProjectsFilters li:hover,
+.sectionProjectsFilters li.active{
+    border-bottom:3px solid #828756 ;
+    
+    
+}
+.sectionProjectsFilters li:first-child{
+    border-left:none;
+}
+.sectionProjectsPhotos{
+    margin-top: 20px;
+    width: 100vw;
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projectsPhoto{
+    width: 280px;
+}
+.sectionProjectPhotoArea{
+    margin:10px ;
+    width: 260px;
+    height: 160px;
+}
+.sectionProjectPhotoArea img{
+    width: inherit;
+    height: inherit;
+}
+.photoInfo{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width:inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    
+    
+
+}
+.photoInfo h4{
+    font-size: 18px;
+    font-weight: 600px;
+
+}
+.sectionProjectPhotoArea:hover .photoInfo {
+    display: flex;
+}
+
+.bgTeam{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0%;
+}
+.sectionTeam{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sectionBory.team{
+    display: block;
+}
+.sectionTeamArea{
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sectionTeamArea .slide{
+    margin: 5px;
+    width: 350px;
+    height: 400px;
+    min-height: 300px;
+    display: inline-block;
+    background-color:white;
+    border-radius: 15px;
+}
+.slidePhoto{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+.slidePhoto img{
+    width: 150px;
+}
+.slide h4{
+    margin-top: 40px;
+    font-size: 17px;
+    color: black;
+    text-align: center;
+}
+.slide p{
+    margin-top: 8px;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+.widgts{
+
+    margin-top: 70px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.widgts.colorWidgts img{
+    width: 30px;
+    height: 30px;
+
+}
+.colorWidgts a{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    background: #828756;
+    border-radius:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colorWidgts a:hover{
+    background-color: #333;
+}
+.sectionClients{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
+.clientsPhotos{
+    display: flex;
+    justify-content: center;
+}
+.descriptionClient{
+    margin-top: 30px;
+}
+.descriptionClient p{
+    margin-top: 10px;
+}
+.descriptionClient h4{
+    font-size: 16px;
+}
+.descriptionClient h4, .descriptionClient p,
+.comentCliet p{
+    text-align: center;
+    line-height: 23px;
+}
+.comentCliet{
+    width: 900px;
+    margin-top: 25px;
+}
+.coment{
+    font-size: 14px;
+    font-weight: bold;
+}
+.section-companies {
+    border-top:1px solid #DDD;
+    border-bottom:1px solid #DDD;
+}
+.section-companies--area {
+    display:flex;
+    align-items:center;
+    margin-left: 15px;
+}
+.section-company {
+    margin-right: 105px;
+    text-align:center;
+}
