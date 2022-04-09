@@ -430,3 +430,87 @@ header{
     margin-right: 105px;
     text-align:center;
 }
+
+.section-map {
+    background-image:url('../images/mapa.jpg');
+    background-size:cover;
+    background-position:center;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.section-map--area {
+    width:100vw;
+    max-width:1140px;
+    margin:auto;
+}
+.section-map--info {
+    width:50%;
+    padding:30px;
+    background-color:#FFF;
+    color:#000;
+}
+.section-map--info-item {
+    display:flex;
+    align-items:center;
+    color:#999;
+    margin-bottom:10px;
+}
+.section-map--info-item-img {
+    width:30px;
+    height:30px;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    background-color:#999;
+    border-radius:15px;
+    margin-right:15px;
+}
+
+.section-map--info-item-img img {
+    width:15px;
+    height:auto;
+}
+.footer--area {
+    display: flex;
+    background-color: #000;
+    justify-content: space-around;
+}
+.footer--item {
+    margin-top: 30px;
+    width:300px;
+    margin-bottom:20px;
+}
+.footer-social {
+    justify-content: center;
+}
+.footer--item.area1{
+    display: flex;
+    justify-content: center;
+}
+.footer--item.area2{
+    color: white;
+}
+.footer--item.area3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.footer--item.area3 input{
+    border: none;
+    background-color: black;
+    border-bottom: #FFF 1px solid;
+    color: white;
+    text-align: center;
+
+}
+.footer--item.area3 button{
+    display: inline-block;
+}
+.footer--item.area3 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
